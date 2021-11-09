@@ -28,10 +28,11 @@ namespace ProNatue_Biomarkt_GmbH
         {
             loadingBarValue += 5;
 
-            labelLoadingProgress.Text = loadingBarValue.ToString() + "%";
+            labelLoadingProgress.Text = loadingBarValue.ToString() + "error";
             loadingProgressBar.Value = loadingBarValue;
             if(loadingBarValue >= loadingProgressBar.Maximum) {
                 loadingBarTimer.Stop();
+
             }
         }
     }
